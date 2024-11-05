@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(240, 240, 240);
+    color: rgb(7, 7, 71); /*to set the colour of all the text*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /*verdana is the main font but Tahoma is the back up incase the browser does not pick up*/
+}
+
+header{
+    width: 95%; /**/
+    max-width:900px; /*so if we get bigger screen, it will stop*/
+    display: flex;
+    justify-content: flex-end; /*so it appear in the right, justify-content only align left and right*/
+    /*padding: 10px;*/
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: #6f4D38;
+    height:200px;    
+
+}
+
+
+
+.share-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(217, 29, 29)
+}
+
+.share-button svg {
+    margin-top: 12px;
+    margin-left: 13px;
+    color: wheat; /*It's for colouring the SVG which is the same way we colour the text*/
+}
+
+.container {
+    width: 95%;
+    max-width: 900px;
+    margin: 10px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    background-color: blanchedalmond;
+}
+
+.tile{
+    width: 90%;
+    height: 45px;
+    background-color: rgb(37,37,37);
+    margin: 4px;
+    border-radius: 0px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 10px; /*to make the text vertically in somewhere*/
+}
+
+.tile:hover{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: scale(1.02); /*to make it slightly bigger when I hover*/
+
+}
+
+a{
+    text-decoration: none;
+    color: bisque;
+}
+
+h1{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h2{
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: 200;
+}
+
+p{
+    margin-bottom: 10px;
+    align-items: center;
+    font-size: 16px;
+}
+
+.image-container{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    overflow: hidden; /*to hide everything that come outside of this*/
+    margin-top: -100px;
+}
+
+.image-container img {
+    width: 120%; /*to stretch the image size*/
+    margin-top: -70px; /*to move the image up inside the container*/
+    margin-left: -5px; /*to adjust the image position*/
+}
+
+.tile-share-button {
+    margin: 5px;
+    margin-right: 7px;
+    width: 32.5px;
+    height: 32.5px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: bisque;
+    border-width: 0.5px;
+    align-items: center;
+}
+
+.icon{
+    margin: 5px;
+    width: 35px;
+    height: 35px;
+    align-items: center;
+}
+
+.tile-share-button svg {
+    margin-left: 9px;
+    margin-top: 7.5px;
+}
